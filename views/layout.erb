@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajax Navigation Example</title>
+</head>
+<body>
+<div id="nav">
+  <nav>
+    <ul>
+      <li><a rel="navigation" href="/">Home</a></li>
+      <li><a rel="navigation" href="/page1">Page 1</a></li>
+      <li><a rel="navigation" href="/page2">Page 2</a></li>
+    </ul>
+  </nav>
+</div>
+<div id="content">
+  <%= yield %>
+</div>
+</body>
+<%= javascript_script_tag "http://code.jquery.com/jquery-1.7.2.min.js" %>
+<%= javascript_script_tag "javascripts/application.js" %>
+</html>
